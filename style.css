@@ -1,0 +1,227 @@
+:root{
+    --light-green: #d5edeb;
+    --light-grey: #eee;
+    --white: #fff;
+    --oswald-font: 'Oswald', sans-serif;
+}
+
+#loading {
+    background-color: var(--light-grey);
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+}
+#loading-screen {
+    background-color: var(--light-green);
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    translate: 0 100vh;
+}
+
+#loading p {
+    font-size: 2rem;
+    font-family: var(--oswald-font);
+}
+
+
+
+
+
+
+.wrapper{
+    margin-top: 200px;
+}
+.section-title{
+    margin-bottom: 100px;
+    font-size:3em;
+	text-align:center;
+	line-height:0.95em;
+	font-weight:bold;
+	color: #000000b7;
+}
+
+
+
+
+
+/* header -------------------------- */
+
+#head{
+    height: 150px;
+    width: 100vw;
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#logo img{
+    width: 180px;
+    position: absolute;
+    top: 40px;
+}
+.select ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    margin-right: 50px;
+}
+a{
+    text-decoration: none;
+    color: palevioletred;
+}
+.select li a:hover{
+    opacity: 0.7;
+}
+/* ------------------------------ */
+
+
+#flower img{
+    min-width: 100vw;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 100px;
+}
+
+
+/* about-------------------------- */
+
+#about{
+    margin: 0 auto;
+}
+#about img{
+    border-radius: 50%;
+    width: 200px;
+}
+#about{
+    width: 80%;
+    height: 350px;
+    margin: 0 auto;
+}
+
+
+
+.plf{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 100px;
+}
+.plfText{
+    margin-left: 100px;
+}
+.plfText h3{
+    color: palevioletred;
+    margin-bottom: 50px;
+}
+div span{  
+    display: inline-block;   white-space: nowrap;
+}
+/* ----------------------------- */
+
+
+
+
+/* skill------------------------ */
+
+.dog{
+    text-align: center;
+}
+.dog img{
+    margin-bottom: 100px;
+}
+.language {
+    max-width: 800px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+/* ------------------------------- */
+
+footer{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 0.5rem;
+    padding: 10px 0;
+}
+
+
+/* profile-------------------- */
+.plf{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.plf p{
+    margin-left: 100px;
+}
+.plf{
+    margin-left: 100px;
+}
+/* ----------------------------- */
+
+
+@media screen and (max-width: 600px){
+    #head{
+     margin-top: 30px;
+    }
+    .section-title{
+     margin-bottom: 50px;
+    }
+    
+     #logo img{
+         position: static;
+     }
+     .select ul{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+     .select ul li{
+         margin: 0;
+     }
+ 
+     #flower img{
+         max-width: 100vw;
+         height: 350px;
+         object-fit: cover;
+     }
+ 
+    
+ 
+     .plf{
+         flex-direction: column;
+         margin: 0;
+         align-items: center;
+     }
+     .plfText{
+         margin: 0;
+     }
+    
+     #skill{
+         margin-top: 200px;
+     }
+     .language{
+         flex-direction: column;
+         justify-content: space-around;
+         max-width: 100%;
+         height: 300px;
+         
+     }
+     .language ul li{
+         margin: 0 auto;
+         text-align: center;
+     }
+     .dog img{
+         margin-bottom: 30px;
+         max-width: 100vw;
+     }
+ }
+ 
